@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cifrar Datos</title>
+</head>
+<body>
+    <h1>Ingresar Datos</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="data">Datos:</label>
+        <input type="text" id="data" name="data" required>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
